@@ -83,10 +83,8 @@ $GLOBALS['nl']=(PHP_SAPI==='cli')?PHP_EOL:"<br/>";
 	    $r=$n;
 	    $p=0;
 	    $q=$base;
-        	echo $n .$GLOBALS['nl'];	
 	    do {
 	    	$p= floor($r / $q);
-	    	echo "p=" .$p . " q=". $q . " r=". ($r - $p*$q) .$GLOBALS['nl'];
 	    	$nr=(int)($r - $p*$q);
 	    	$s=$letters[$nr] . $s;
 	    	$r=($r-$nr)/$q;
@@ -98,7 +96,7 @@ $GLOBALS['nl']=(PHP_SAPI==='cli')?PHP_EOL:"<br/>";
 	//													\\
 	//		Front-end web developper challenge			\\
 	//	https://trello.com/jobs/front-end-developer		\\
-	//		Execution time :  385.28652501106			\\
+	//		Execution time :  385.28652501106s			\\
 	//**************************************************\\
 	/**
 	 * Function decodeMessage
@@ -150,7 +148,7 @@ $GLOBALS['nl']=(PHP_SAPI==='cli')?PHP_EOL:"<br/>";
 	 * Function getCandidate
 	 *
 	 * Provides the pair of identical characters that are farthest apart, and contain no pairs of identical characters between them.
-	 * Execution time : 0.7770779132843
+	 * 
 	 * @param (string) ($s) the string which has to be searched
 	 * @return (array) (theCandidate) an array which contains : the position of the 1st occurence, the position of the 2d occurence, the character, the distance between both occurences
 	 */

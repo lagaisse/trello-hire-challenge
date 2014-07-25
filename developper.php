@@ -10,7 +10,7 @@ require_once('./trello.contest.lib.php');
 	</head>
 	<body>
 		
-		<form action="./" method="get">
+		<form action="<?php echo $_SERVER["REQUEST_URI"]; ?>" method="get">
 			<h2>Entrez la chaine de caractères à encoder :</h2>
 
 			<input type="text" name="chaine" value="<?php echo getGET('chaine') ?>">	
